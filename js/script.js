@@ -53,17 +53,6 @@ $(".saveBtn").click(function() {
     
 });
 
-  $(".deleteBtn").click(function() {
-        eventText = $(this).siblings(".input").val("");
-        eventText = $(this).siblings(".input").val();
-        eventTime = $(this).siblings(".hour").text();
-        localStorage.setItem(eventTime, JSON.stringify(eventText));
-  
-    colorChange ();
-    renderText ();
-
-});
-
     // Enter and Display Events
 function renderText () {   
     var saveEventText8 = JSON.parse(localStorage.getItem("8:00 am"));
