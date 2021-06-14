@@ -1,8 +1,6 @@
 // Moment script
 var m = moment();
 
-// 
-
 // Day, date, time
 $("#currentDay").text(moment().format('LLLL'));
 
@@ -53,7 +51,7 @@ $(".saveBtn").click(function() {
     
 });
 
-    // Enter and Display Events
+ // Enter and Display Events
 function renderText () {   
     var saveEventText8 = JSON.parse(localStorage.getItem("8:00 am"));
     $("#8").val("");
